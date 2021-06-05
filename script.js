@@ -24,7 +24,7 @@ function calculateWeathertoCelcius(w){
 
 //get weather api
 async function getWeather(){
-    const apiUrl='http://api.openweathermap.org/data/2.5/weather?q=Bangkok&appid=1100a14676c9af7cc70e0c4f24e3429d'
+    const apiUrl='https://api.openweathermap.org/data/2.5/weather?q=Bangkok&appid=1100a14676c9af7cc70e0c4f24e3429d'
     try{
         const response = await fetch(apiUrl);
         apiWeather = await response.json();
